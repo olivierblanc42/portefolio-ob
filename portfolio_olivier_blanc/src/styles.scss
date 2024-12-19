@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Variables */
+
+//font
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+// Colors
+$main-color: #336699;
+$main-color-50: rgba(51, 102, 153, 0.5);
+$second-color: #86BBD8;
+$third-color: #2F4858;
+$annexe-color: #96694D;
+
+// Margins
+$margin-s: 20px;
+$margin: 40px;
+$margin-l: 60px;
+$margin-xl: 80px;
+$margin-xll: 100px;
+
+// Padding
+$padding-s: 10px;
+$padding: 20px;
+$padding-l: 40px;
+$padding-xl: 60px;
+$padding-xll: 80px;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: $main-color;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Roboto', sans-serif;
+}
