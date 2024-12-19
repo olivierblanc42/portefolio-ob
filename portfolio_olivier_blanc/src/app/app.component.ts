@@ -13,4 +13,5 @@ import {FaIconComponent} from '@fortawesome/angular-fontawesome';
 export class AppComponent {
   title = 'portfolio_olivier_blanc';
   faBars = faBars;
+
 }

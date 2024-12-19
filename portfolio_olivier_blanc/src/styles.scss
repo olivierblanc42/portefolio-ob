@@ -39,18 +39,27 @@ h1,h2,h3,h4,h5,h6{
   font-family: 'Roboto', sans-serif;
 }
 
-
-
-nav{
+.div-footer ,nav{
+  margin-left: 210px;
+  margin-right: 210px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-    margin-left: 210px;
-    margin-right: 210px;
-
 }
+
+footer{
+  color: black;
+padding-bottom: $padding;
+  padding-top: $padding;
+}
+
 
 .backgroundColor{
   background-color: $main-color-50;
+}
+
+footer{
+  background-color: #F1EFEF;
+  font-weight: bold;
 }
