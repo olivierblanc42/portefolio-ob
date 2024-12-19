@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import {FaIconComponent} from '@fortawesome/angular-fontawesome';
 
 @Component({
@@ -12,5 +12,5 @@ import {FaIconComponent} from '@fortawesome/angular-fontawesome';
 })
 export class AppComponent {
   title = 'portfolio_olivier_blanc';
-  faCoffee = faCoffee;
+  faBars = faBars;
 }
