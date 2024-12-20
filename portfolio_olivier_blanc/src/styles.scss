@@ -63,3 +63,22 @@ footer{
   background-color: #F1EFEF;
   font-weight: bold;
 }
+
+
+h1,h2,h3{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top:$padding ;
+  padding-bottom: $padding;
+}
+
+.section-div{
+  margin-left: 210px;
+  margin-right: 210px;
+  p{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top:$padding ;
+    padding-bottom: $padding;
+  }
+}
