@@ -50,7 +50,7 @@ h1,h2,h3,h4,h5,h6{
 
 footer{
   color: black;
-padding-bottom: $padding;
+  padding-bottom: $padding;
   padding-top: $padding;
 }
 
@@ -65,10 +65,15 @@ footer{
 }
 
 
-h1,h2,h3{
+h1{
   margin-top: 0;
   margin-bottom: 0;
   padding-top:$padding ;
+  padding-bottom: $padding;
+}
+h2{
+  margin-top: 0;
+  margin-bottom: 0;
   padding-bottom: $padding;
 }
 
@@ -81,4 +86,14 @@ h1,h2,h3{
     padding-top:$padding ;
     padding-bottom: $padding;
   }
+}
+
+.btn{
+  background-color: $annexe-color;
+  padding: $padding-s $padding-l;
+  border-radius: 5px;
+}
+
+.btn-contact{
+
 }

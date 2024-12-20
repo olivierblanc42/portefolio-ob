@@ -1,6 +1,37 @@
+
 .primary-section{
   background-color: #2F4858 ;
+  padding-bottom: 20px;
+}
+
+.infos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.info{
+  width: 700px;
+  background-color: #86BBD8;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-radius: 5px;
 }
 
 
+.primary-section{
+  .section-div{
+    div{
+      text-align: center;
+    }
+  }
+}
 
