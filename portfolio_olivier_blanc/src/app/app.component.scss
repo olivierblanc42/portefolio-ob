@@ -37,4 +37,70 @@ background-image: url("/images/navBackground.webp");
   border-radius: 50%;
 }
 
+/* Overlay de la modale */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
 
+.menu-overlay.active {
+  display: flex;
+  opacity: 1;
+}
+
+/* Contenu du menu */
+.menu-content {
+  color: white;
+  background-color: #2F4858;
+  width: 80%;
+  max-width: 400px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  z-index: 99;
+  a{
+    color:white !important;
+  }
+}
+.menu-content h2 {
+  margin-bottom: 20px;
+}
+
+.menu-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-content li {
+  margin: 10px 0;
+}
+
+.menu-content a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.menu-content a:hover {
+  color: #007bff;
+}
+
+/* Bouton de fermeture */
+.close-btn {
+
+}
+
+.close-btn:hover {
+  color: #ff0000;
+}
