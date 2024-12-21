@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-realisations',
   imports: [],
   templateUrl: './realisations.component.html',
+  standalone: true,
   styleUrl: './realisations.component.scss'
 })
 export class RealisationsComponent {
