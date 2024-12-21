@@ -13,6 +13,7 @@ $main-color-50: rgba(51, 102, 153, 0.5);
 $second-color: #86BBD8;
 $third-color: #2F4858;
 $annexe-color: #96694D;
+$annexe-color-hover:#BC8360;
 
 // Margins
 $margin-s: 20px;
@@ -94,6 +95,9 @@ h2{
   border-radius: 5px;
 }
 
+.btn:hover{
+  background-color: $annexe-color-hover;
+}
 .btn-contact{
 
 }
