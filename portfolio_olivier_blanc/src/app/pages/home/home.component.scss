@@ -19,11 +19,11 @@
 .info{
   width: 700px;
   background-color: #86BBD8;
-  margin-top: 20px;
-  margin-bottom: 20px;
   padding-top: 10px;
   padding-bottom: 20px;
   border-radius: 5px;
+  margin: 20px auto;
+
 }
 
 
@@ -35,3 +35,14 @@
   }
 }
 
+@media (max-width: 1300px) {
+  .info{
+    width: 300px;
+    background-color: #86BBD8;
+    margin: 20px auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+  }
+
+}
