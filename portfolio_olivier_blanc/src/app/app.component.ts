@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {RouterLink, RouterOutlet} from '@angular/router';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import {faBars, faHouse} from '@fortawesome/free-solid-svg-icons';
 import {FaIconComponent} from '@fortawesome/angular-fontawesome';
 
 @Component({
@@ -24,5 +24,5 @@ export class AppComponent {
   }
 
 
-
+  protected readonly faHouse = faHouse;
 }

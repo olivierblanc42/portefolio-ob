@@ -20,22 +20,49 @@ $padding-xll: 80px;
 background-image: url("/images/navBackground.webp");
   height: 890px;
 }
+
+
+
 .menu{
   text-transform: uppercase;
+  div{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-direction: row;
+  }
 }
 .title{
    font-size: 36px;
   text-transform: uppercase;
   border: solid white 1px;
   padding: $padding $padding-l;
-
 }
 
+.menu{
+  cursor: pointer;
+
+  div{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+  }
+
+}
 .profil{
   height: 80px;
   width: 80px;
   border-radius: 50%;
 }
+
+.icons-nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
 
 /* Overlay de la modale */
 .menu-overlay {
@@ -60,6 +87,7 @@ background-image: url("/images/navBackground.webp");
 
 /* Contenu du menu */
 .menu-content {
+  position: relative;
   color: white;
   background-color: #2F4858;
   width: 80%;
@@ -68,6 +96,10 @@ background-image: url("/images/navBackground.webp");
   text-align: center;
   border-radius: 10px;
   z-index: 99;
+  text-transform: uppercase;
+  li{
+    padding-bottom: 10px;
+  }
   a{
     color:white !important;
   }
@@ -98,11 +130,19 @@ background-image: url("/images/navBackground.webp");
 
 /* Bouton de fermeture */
 .close-btn {
-
+  position: absolute;
+  right: 0;
+  top:0;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .close-btn:hover {
-  color: #ff0000;
+  color: white;
+  cursor: pointer;
+
 }
 
 
