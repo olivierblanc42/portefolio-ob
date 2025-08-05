@@ -15,23 +15,24 @@ $padding-xll: 80px;
 
 
 
-.headerBackground
-{
-background-image: url("/images/navBackground.webp");
+.headerBackground {
+  background-image: url("/images/navBackground.webp");
   height: 890px;
 }
-.menu{
+
+.menu {
   text-transform: uppercase;
 }
-.title{
-   font-size: 36px;
+
+.title {
+  font-size: 36px;
   text-transform: uppercase;
   border: solid white 1px;
   padding: $padding $padding-l;
 
 }
 
-.profil{
+.profil {
   height: 80px;
   width: 80px;
   border-radius: 50%;
@@ -68,13 +69,17 @@ background-image: url("/images/navBackground.webp");
   text-align: center;
   border-radius: 10px;
   z-index: 99;
-  a{
-    color:white !important;
+  position: relative;
+
+  a {
+    color: white !important;
+  }
+
+  h2 {
+    padding: 0px;
   }
 }
-.menu-content h2 {
-  margin-bottom: 20px;
-}
+
 
 .menu-content ul {
   list-style: none;
@@ -98,11 +103,13 @@ background-image: url("/images/navBackground.webp");
 
 /* Bouton de fermeture */
 .close-btn {
-
+  position: absolute;
+  max-width: 25px;
+  right: 2%;
+  top: 0%;
+  cursor: pointer;
 }
 
 .close-btn:hover {
   color: #ff0000;
 }
-
-
