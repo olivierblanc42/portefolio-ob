@@ -2,7 +2,7 @@
     <div class="backgroundColor">
       <div class="menu-overlay" [class.active]="isMenuOpen" (click)="closeMenuModale()">
         <div class="menu-content">
-          <button class="close-btn" (click)="closeMenuModale()">×</button>
+          <a class="close-btn" (click)="closeMenuModale()">×</a>
           <h2>Menu</h2>
           <ul>
             <li><a routerLink="/" (click)="closeMenuModale()">Accueil</a></li>
