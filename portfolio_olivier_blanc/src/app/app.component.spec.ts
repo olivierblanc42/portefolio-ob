@@ -12,14 +12,13 @@ let fixture: ComponentFixture<AppComponent>
       imports: [AppComponent],
       providers: [provideRouter([])],
     }).compileComponents();
-  });
-
-  beforeEach(() => {
+    
     fixture = TestBed.createComponent(AppComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
-  
+
+
 
   it('should create the app', () => {
     expect(component).toBeTruthy();

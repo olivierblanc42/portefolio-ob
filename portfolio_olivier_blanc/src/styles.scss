@@ -77,7 +77,7 @@ h1{
   padding-top:$padding ;
   padding-bottom: $padding;
 }
-h2{
+h2,h3{
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: $padding;
@@ -103,10 +103,6 @@ h2{
 .btn:hover{
   background-color: $annexe-color-hover;
 }
-.btn-contact{
-
-}
-
 
 a{
   text-decoration: none;
