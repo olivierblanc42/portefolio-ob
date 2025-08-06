@@ -17,6 +17,7 @@ export class AppComponent {
 
   openMenu(): void {
     this.isMenuOpen = true;
+
   }
 
   closeMenuModale(): void {
