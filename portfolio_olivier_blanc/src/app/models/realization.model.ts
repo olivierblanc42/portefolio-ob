@@ -1,4 +1,4 @@
-export interface Realization {
+export type Realization = {
     id: number;
     name: string;
     description: string;

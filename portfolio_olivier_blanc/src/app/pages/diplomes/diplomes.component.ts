@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
+import { DiplomeService } from '../../service/diplome/diplome.service';
 @Component({
   selector: 'app-diplomes',
   imports: [],
@@ -7,6 +7,22 @@ import { Component } from '@angular/core';
   standalone: true,
   styleUrl: './diplomes.component.scss'
 })
-export class DiplomesComponent {
+export class DiplomesComponent implements OnInit {
+
+
+  constructor(
+    private diplomeService: DiplomeService,
+
+  ) { }
+
+
+  ngOnInit(): void {
+    
+   this.diplomeService.getDiplome();
+
+  }
+
+
+
 
 }

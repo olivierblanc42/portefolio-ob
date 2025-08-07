@@ -1,4 +1,4 @@
-export interface Diplome {
+export type Diplome = {
     id: number;
     name: string;
     years: Date;

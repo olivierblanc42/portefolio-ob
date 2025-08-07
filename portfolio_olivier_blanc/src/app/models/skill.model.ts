@@ -1,4 +1,4 @@
-export interface Skill {
+export type Skill = {
     id: number;
     name: string;
     urlImage: string;
