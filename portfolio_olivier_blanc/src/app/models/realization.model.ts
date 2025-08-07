@@ -2,9 +2,8 @@ export interface Realization {
     id: number;
     name: string;
     description: string;
-    url: string;
+    urlImg: string;
+    urlSite: string;
 }
 
-export interface RealizationList {
-    realizations: Realization[];
-}
+
