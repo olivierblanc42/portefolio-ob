@@ -13,7 +13,7 @@ $main-color-50: rgba(51, 102, 153, 0.5);
 $second-color: #86BBD8;
 $third-color: #2F4858;
 $annexe-color: #96694D;
-$annexe-color-hover:#BC8360;
+$annexe-color-hover: #BC8360;
 
 // Margins
 $margin-s: 20px;
@@ -36,11 +36,17 @@ body {
   color: white;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Roboto', sans-serif;
 }
 
-.div-footer ,nav{
+.div-footer,
+nav {
   margin-left: 210px;
   margin-right: 210px;
   display: flex;
@@ -49,62 +55,85 @@ h1,h2,h3,h4,h5,h6{
   justify-content: space-between;
 }
 
-footer{
+footer {
   color: black;
   padding-bottom: $padding;
   padding-top: $padding;
-  
-    a {
-        color: black;
-      }
- 
+
+  a {
+    color: black;
+  }
+
 }
 
 
-.backgroundColor{
+.backgroundColor {
   background-color: $main-color-50;
 }
 
-footer{
+footer {
   background-color: #F1EFEF;
   font-weight: bold;
 }
 
 
-h1{
+h1 {
   margin-top: 0;
   margin-bottom: 0;
-  padding-top:$padding ;
+  padding-top: $padding ;
   padding-bottom: $padding;
 }
-h2,h3{
+
+h2,
+h3 {
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: $padding;
 }
 
-.section-div{
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+
+.section-div {
   margin-left: 210px;
   margin-right: 210px;
-  p{
+
+  p {
     margin-top: 0;
     margin-bottom: 0;
-    padding-top:$padding ;
+    padding-top: $padding ;
     padding-bottom: $padding;
   }
 }
 
-.btn{
+.btn {
   background-color: $annexe-color;
   padding: $padding-s $padding-l;
   border-radius: 5px;
 }
 
-.btn:hover{
+.btn:hover {
   background-color: $annexe-color-hover;
 }
 
-a{
+a {
   text-decoration: none;
   color: white;
 }
+
+
+@media (min-width: 1024px) {
+
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1440px) {}
+
+
+@media (min-width: 1920px) {}
