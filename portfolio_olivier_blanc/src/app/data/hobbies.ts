@@ -1,7 +1,7 @@
 import { Hobby } from "../models";
 
 
-export const  Hobbies : Hobby[] = [
+export const  hobbiesList : Hobby[] = [
    {
         id: 1,
         name: 'Marche à pied',

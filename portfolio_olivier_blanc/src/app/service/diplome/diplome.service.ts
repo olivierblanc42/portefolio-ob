@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Diplome } from '../../models';
-import { DiplomeList } from '../../data/diplomes';
+import { diplomeList } from '../../data/diplomes';
 import { BehaviorSubject } from 'rxjs';
 
 
@@ -16,8 +16,8 @@ export class DiplomeService {
 
 
   getDiplome(): Diplome[] {
-    console.log(DiplomeList)
-      return DiplomeList
+    console.log(diplomeList)
+      return diplomeList
  }
 
 

@@ -1,6 +1,6 @@
 import { Diplome } from "../models";
 
-export const DiplomeList: Diplome[] = [
+export const diplomeList: Diplome[] = [
     {
         id: 1,
         name:'Bac science et technique de laboratoire: 2010',

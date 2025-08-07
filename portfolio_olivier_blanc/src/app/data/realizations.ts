@@ -1,5 +1,5 @@
 import { Realization } from "../models";
 
-export const RealizationList: Realization[] = [
+export const realizationList: Realization[] = [
     
 ]
