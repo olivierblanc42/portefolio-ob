@@ -49,5 +49,40 @@ export const skillList: Skill[] = [
         urlImage: '',
         hardSkill: true
     },
-    
+    {
+        id: 9,
+        name: 'Capacité d\'adaptation',
+        urlImage: '',
+        hardSkill: false
+    },
+    {
+        id: 10,
+        name: 'Persévérance',
+        urlImage: '',
+        hardSkill: false
+    },
+    {
+        id: 11,
+        name: 'Réactivité',
+        urlImage: '',
+        hardSkill: false
+    },
+    {
+        id: 12,
+        name: 'Travail d\'équipe',
+        urlImage: '',
+        hardSkill: false
+    },
+    {
+        id: 13,
+        name: 'Créativité',
+        urlImage: '',
+        hardSkill: false
+    },
+    {
+        id: 14,
+        name: 'Pensée critique',
+        urlImage: '',
+        hardSkill: false
+    },
 ]
