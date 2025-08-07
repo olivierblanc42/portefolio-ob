@@ -1,8 +1,8 @@
 export interface Skill {
     id: number;
     name: string;
-    description: string;
-    url: string;
+    urlImage: string;
+    hardSkill: boolean;
 }
 
 
