@@ -9,7 +9,6 @@ export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'diplomes', component: DiplomesComponent },
   { path: 'skill', component: SkillComponent },
-
   { path: 'loisirs', component: LoisirsComponent },
   { path: 'realisations', component: RealizationsComponent },
 
