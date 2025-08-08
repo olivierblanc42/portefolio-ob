@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   standalone: true,
   styleUrl: './realizations.component.scss'
 })
-export class RealisationsComponent {
+export class RealizationsComponent {
 
 }
