@@ -46,7 +46,7 @@ h6 {
 }
 
 .div-footer,
-nav {
+.main-nav {
   margin-left: 210px;
   margin-right: 210px;
   display: flex;
@@ -54,7 +54,10 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
-
+.main-nav{
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
 footer {
   color: black;
   padding-bottom: $padding;
