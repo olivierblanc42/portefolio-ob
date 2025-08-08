@@ -13,8 +13,6 @@ export class DiplomeService {
 
 
 
-
-
   getDiplome(): Diplome[] {
     console.log(diplomeList)
       return diplomeList

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DiplomeService } from '../../service/diplome/diplome.service';
+import { Diplome } from '../../models';
 @Component({
   selector: 'app-diplomes',
   imports: [],
@@ -9,7 +10,8 @@ import { DiplomeService } from '../../service/diplome/diplome.service';
 })
 export class DiplomesComponent implements OnInit {
 
-
+  diplome: Diplome[] | null = null;
+  
   constructor(
     private diplomeService: DiplomeService,
 
@@ -18,7 +20,7 @@ export class DiplomesComponent implements OnInit {
 
   ngOnInit(): void {
     
-   this.diplomeService.getDiplome();
+  this.diplome = this.diplomeService.getDiplome();
 
   }
 
