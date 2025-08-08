@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
+import { Hobby } from '../../models';
+import { HobbieService } from '../../service/hobbie/hobbie.service';
 @Component({
   selector: 'app-loisirs',
   imports: [],
@@ -7,6 +8,19 @@ import { Component } from '@angular/core';
   standalone: true,
   styleUrl: './loisirs.component.scss'
 })
-export class LoisirsComponent {
+export class LoisirsComponent implements OnInit {
+
+  hobbies: Hobby[] | null = null;
+
+
+  constructor(
+    private hobbieService: HobbieService
+
+  ) {
+  }
+  ngOnInit(): void {
+    this.hobbies = this.hobbieService.getHobby();
+
+  }
 
 }
