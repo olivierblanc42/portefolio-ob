@@ -29,6 +29,7 @@ $padding-l: 40px;
 $padding-xl: 60px;
 $padding-xll: 80px;
 
+
 body {
   font-family: 'Roboto', sans-serif;
   background-color: $main-color;
@@ -45,39 +46,13 @@ h6 {
   font-family: 'Roboto', sans-serif;
 }
 
-.div-footer,
-.main-nav {
-  margin-left: 210px;
-  margin-right: 210px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.main-nav{
-  padding-bottom: 5px;
-  padding-top: 5px;
-}
-footer {
-  color: black;
-  padding-bottom: $padding;
-  padding-top: $padding;
-
-  a {
-    color: black;
-  }
-
-}
 
 
 .backgroundColor {
   background-color: $main-color-50;
 }
 
-footer {
-  background-color: #F1EFEF;
-  font-weight: bold;
-}
+
 
 
 h1 {
@@ -95,21 +70,22 @@ h3 {
 }
 
 .container {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 1rem;
+  margin: $margin-s auto;
+  padding: $margin-s;
 }
 
+.section{
+  padding:  $padding $padding-s;
+}
 
 .section-div {
-  margin-left: 210px;
-  margin-right: 210px;
 
   p {
     margin-top: 0;
     margin-bottom: 0;
     padding-top: $padding ;
     padding-bottom: $padding;
+    line-height: 25px;
   }
 }
 
@@ -117,6 +93,8 @@ h3 {
   background-color: $annexe-color;
   padding: $padding-s $padding-l;
   border-radius: 5px;
+  box-sizing: border-box;
+  display:inline-block;
 }
 
 .btn:hover {
@@ -129,14 +107,55 @@ a {
 }
 
 
-@media (min-width: 1024px) {
 
-  .container {
-    max-width: 1200px;
-  }
+/* Téléphones moyens à grands (portrait et paysage) */
+@media (min-width: 481px) and (max-width: 767px) {}
+
+/* Tablettes (portrait) */
+@media (min-width: 768px) and (max-width: 991px) {
+
 }
 
-@media (min-width: 1440px) {}
+/* Tablettes (paysage) */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Styles pour ordinateurs portables */
+@media (min-width: 1200px) and (max-width: 1439px) {
+
+}
+
+/* Styles pour grands écrans (desktop) */
+@media (min-width: 1440px) {
+
+
+}
+
+
+
+
+@media (min-width: 1024px) {
+
+  // .container {
+  //   max-width: 1200px;
+  // }
+}
+
+@media (min-width: 1440px) {
+
+  // .section-div {
+    //   margin-left: 210px;
+    //   margin-right: 210px;
+  
+    //   p {
+    //     margin-top: 0;
+    //     margin-bottom: 0;
+    //     padding-top: $padding ;
+    //     padding-bottom: $padding;
+    //   }
+    // }
+}
 
 
 @media (min-width: 1920px) {}

@@ -1,27 +1,32 @@
 <header class="headerBackground">
-    <div class="backgroundColor">
-      <div class="menu-overlay" [class.active]="isMenuOpen" (click)="closeMenuModale()">
-        <div class="menu-content">
-          <a class="close-btn" (click)="closeMenuModale()">×</a>
-          <h2>Menu</h2>
-          <ul>
-            <li><a routerLink="/" (click)="closeMenuModale()">Accueil</a></li>
-            <li><a routerLink="/competences" (click)="closeMenuModale()">Compétence </a></li>
-            <li><a routerLink="/diplomes" (click)="closeMenuModale()">Diplômes</a></li>
-            <li><a routerLink="/loisirs" (click)="closeMenuModale()">Loisirs</a></li>
-            <li><a routerLink="/realisations" (click)="closeMenuModale()">Réalisations</a></li>
-          </ul>
-        </div>
+  <div class="backgroundColor">
+    <div class="menu-overlay" [class.active]="isMenuOpen" (click)="closeMenuModale()">
+      <div class="menu-content">
+        <a class="close-btn" (click)="closeMenuModale()">×</a>
+        <h2>Menu</h2>
+        <ul>
+          <li><a routerLink="/" (click)="closeMenuModale()">Accueil</a></li>
+          <li><a routerLink="/competences" (click)="closeMenuModale()">Compétence </a></li>
+          <li><a routerLink="/diplomes" (click)="closeMenuModale()">Diplômes</a></li>
+          <li><a routerLink="/loisirs" (click)="closeMenuModale()">Loisirs</a></li>
+          <li><a routerLink="/realisations" (click)="closeMenuModale()">Réalisations</a></li>
+        </ul>
       </div>
-
-      <nav class="main-nav">
-      <a class="menu" (click)="openMenu()" > <fa-icon [icon]="faBars"></fa-icon> menu</a>
-      <h1 class="title">PortFolio Olivier Blanc</h1>
-     <a routerLink="/"><img class="profil" src="/images/photo.webp" alt="photo profil"></a> 
-    </nav>
     </div>
-</header>
 
+    <nav class="main-nav">
+        <div>
+          <a class="menu mobile" (click)="openMenu()"> <fa-icon [icon]="faBars" size="2x"></fa-icon><span>menu</span></a>
+          <a routerLink="/"><img class="profil" src="/images/photo.webp" alt="photo profil"></a>
+        </div>
+      <a class="menu desktop" (click)="openMenu()"> <fa-icon [icon]="faBars"></fa-icon><span>menu</span></a>
+      <h1 class="title">PortFolio Olivier Blanc</h1>
+
+      <a routerLink="/"><img class="profil desktop " src="/images/photo.webp" alt="photo profil"></a>
+
+    </nav>
+  </div>
+</header>
 
 <router-outlet />
 

@@ -15,30 +15,65 @@ $padding-xll: 80px;
 
 
 
-.headerBackground {
-  background-image: url("/images/navBackground.webp");
-  height: 890px;
+header {
+  margin-left: auto;
+  margin-right: auto;
 }
+    .div-footer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: $padding-s ;
+    }
+
+
+
+
+.main-nav {
+  padding: $padding-s  ;
+  h1{
+    text-align: center;
+  }
+  div{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    padding-bottom: $padding-s ;
+  }
+}
+
 
 .menu {
   text-transform: uppercase;
+
+  span {
+    display: none;
+  }
 }
 
 .title {
-  font-size: 36px;
+  font-size: 15px;
   text-transform: uppercase;
   border: solid white 1px;
   padding: $padding $padding-l;
-
 }
 
 .profil {
-  height: 80px;
-  width: 80px;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
 }
 
-/* Overlay de la modale */
+.desktop {
+  display: none;
+}
+
+
+
+
+// /* Overlay de la modale */
 .menu-overlay {
   position: fixed;
   top: 0;
@@ -59,7 +94,7 @@ $padding-xll: 80px;
   opacity: 1;
 }
 
-/* Contenu du menu */
+// /* Contenu du menu */
 .menu-content {
   color: white;
   background-color: #2F4858;
@@ -112,4 +147,69 @@ $padding-xll: 80px;
 
 .close-btn:hover {
   color: #ff0000;
+}
+
+
+
+footer {
+  color: black;
+  padding-bottom: $padding-s;
+  padding-top: $padding-s;
+  background-color: #F1EFEF;
+  font-weight: bold;
+
+  a {
+    color: black;
+  }
+}
+
+
+
+/* Téléphones moyens à grands (portrait et paysage) */
+@media (min-width: 481px) and (max-width: 767px) {}
+
+/* Tablettes (portrait) */
+@media (min-width: 768px) and (max-width: 991px) {}
+
+/* Tablettes (paysage) */
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+/* Styles pour ordinateurs portables */
+@media (min-width: 1200px) and (max-width: 1439px) {}
+
+/* Styles pour grands écrans (desktop) */
+@media (min-width: 1440px) {
+
+  .headerBackground {
+    background-image: url("/images/navBackground.webp");
+    height: 890px;
+  }
+
+  .title {
+    font-size: 36px;
+    text-transform: uppercase;
+    border: solid white 1px;
+    padding: $padding $padding-l;
+  }
+
+
+
+  .profil {
+    height: 80px;
+    width: 80px;
+
+  }
+
+
+
+  .div-footer,
+  .main-nav {
+    // margin-left: 210px;
+    // margin-right: 210px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
 }
