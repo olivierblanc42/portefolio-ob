@@ -3,7 +3,7 @@ import { Diplome } from "../models";
 export const diplomeList: Diplome[] = [
     {
         id: 1,
-        name:'Bac science et technique de laboratoire: 2010',
+        name:'Bac science et technique de laboratoire',
         years: new Date('2010-01-01'),
         establishment: 'Lycée Privé La Salésienne'
     },
