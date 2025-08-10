@@ -4,8 +4,8 @@
         @for (diplome of diplomes; track $index) {
         <ui-card>
             <h3>{{diplome.name}}</h3>
-            <p>{{diplome.establishment}}</p>
             <p>{{diplome.years |date:'yyyy'}}</p>
+            <p>{{diplome.establishment}}</p>
         </ui-card>
         }
     </section>

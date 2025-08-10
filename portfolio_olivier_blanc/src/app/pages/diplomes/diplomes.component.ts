@@ -27,7 +27,7 @@ export class DiplomesComponent implements OnInit {
 
   ngOnInit(): void {
     
-  this.diplomes = this.diplomeService.getDiplome();
+    this.diplomes = this.diplomeService.getDiplome().sort((a, b) => b.years.getTime() - a.years.getTime());
 
   }
 
