@@ -1,0 +1,17 @@
+
+// Margins
+$margin-s: 20px;
+$margin: 40px;
+$margin-l: 60px;
+$margin-xl: 80px;
+$margin-xll: 100px;
+
+.card {
+    min-width: 218px;
+    max-width: 218px;
+    min-height: 450px;
+    max-height: 450px;
+    background-color: white;
+    color: black;
+    margin:$margin-s ;
+}
