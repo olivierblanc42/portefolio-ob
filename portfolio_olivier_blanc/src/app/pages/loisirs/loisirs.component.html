@@ -1,4 +1,14 @@
 <div class="container">
     <section>
+        <a class="menu desktop" [routerLink]="'/'"> <fa-icon [icon]="faHouse"></fa-icon></a>
+        <div>
+            @for (hobby of hobbies; track $index) {
+
+            <ui-card>
+                <h3>{{hobby.name}}</h3>
+            </ui-card>
+            }
+        </div>
+
     </section>
 </div>

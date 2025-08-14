@@ -1,9 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { Hobby } from '../../models';
 import { HobbieService } from '../../service/hobbie/hobbie.service';
+import { FaIconComponent } from '@fortawesome/angular-fontawesome';
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { faHouse } from '@fortawesome/free-solid-svg-icons';
+import { CardComponent } from '../../components/card/card.component';
+
 @Component({
   selector: 'app-loisirs',
-  imports: [],
+  imports: [FaIconComponent, RouterModule, CommonModule, CardComponent],
   templateUrl: './loisirs.component.html',
   standalone: true,
   styleUrl: './loisirs.component.scss'
@@ -11,6 +17,7 @@ import { HobbieService } from '../../service/hobbie/hobbie.service';
 export class LoisirsComponent implements OnInit {
 
   hobbies: Hobby[] | null = null;
+  faHouse = faHouse;
 
 
   constructor(
