@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { DiplomesComponent } from './diplomes.component';
+import { ActivatedRoute } from '@angular/router';
+import { of } from 'rxjs';
 
 describe('DiplomesComponent', () => {
   let component: DiplomesComponent;
@@ -8,7 +10,16 @@ describe('DiplomesComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [DiplomesComponent]
+      imports: [DiplomesComponent],
+         providers: [
+              {
+                provide: ActivatedRoute,
+                useValue: {
+                  params: of({ id: '123' }), 
+                  snapshot: { paramMap: { get: () => '123' } } 
+                }
+              }
+            ]
     })
     .compileComponents();
 
