@@ -48,3 +48,32 @@
 //   }
 
 // }
+/* Téléphones moyens à grands (portrait et paysage) */
+@media (min-width: 481px) {}
+
+/* Tablettes (portrait) */
+@media (min-width: 768px) {}
+
+/* Tablettes (paysage) */
+@media (min-width: 992px) {}
+
+/* Styles pour ordinateurs portables */
+@media (min-width: 1024px) {
+.info {
+    width: 45%;
+
+  }
+    .container {
+      margin: 0px;
+    
+    }
+}
+
+/* Styles pour grands écrans (desktop) */
+@media (min-width: 1440px) {
+
+ 
+
+
+
+}

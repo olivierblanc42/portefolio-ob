@@ -69,13 +69,19 @@ h3 {
   padding-bottom: $padding;
 }
 
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .container {
   margin: $margin-s auto;
   padding: $margin-s;
 }
 
-.section{
-  padding:  $padding $padding-s;
+.section {
+  padding: $padding $padding-s;
 }
 
 .section-div {
@@ -94,7 +100,7 @@ h3 {
   padding: $padding-s $padding-l;
   border-radius: 5px;
   box-sizing: border-box;
-  display:inline-block;
+  display: inline-block;
 }
 
 .btn:hover {
@@ -106,31 +112,28 @@ a {
   color: white;
 }
 
-
+.home-icon {
+  margin-bottom: $margin-s;
+}
 
 /* Téléphones moyens à grands (portrait et paysage) */
-@media (min-width: 481px) and (max-width: 767px) {}
+@media (min-width: 481px)  {}
 
 /* Tablettes (portrait) */
-@media (min-width: 768px) and (max-width: 991px) {
-
+@media (min-width: 768px)  {
+    .container {
+        padding: 0px;
+      }
 }
 
 /* Tablettes (paysage) */
-@media (min-width: 992px) and (max-width: 1199px) {
-
-}
+@media (min-width: 992px)  {}
 
 /* Styles pour ordinateurs portables */
-@media (min-width: 1200px) and (max-width: 1439px) {
-
-}
+@media (min-width: 1200px)  {}
 
 /* Styles pour grands écrans (desktop) */
-@media (min-width: 1440px) {
-
-
-}
+@media (min-width: 1440px) {}
 
 
 
@@ -145,16 +148,16 @@ a {
 @media (min-width: 1440px) {
 
   // .section-div {
-    //   margin-left: 210px;
-    //   margin-right: 210px;
-  
-    //   p {
-    //     margin-top: 0;
-    //     margin-bottom: 0;
-    //     padding-top: $padding ;
-    //     padding-bottom: $padding;
-    //   }
-    // }
+  //   margin-left: 210px;
+  //   margin-right: 210px;
+
+  //   p {
+  //     margin-top: 0;
+  //     margin-bottom: 0;
+  //     padding-top: $padding ;
+  //     padding-bottom: $padding;
+  //   }
+  // }
 }
 
 

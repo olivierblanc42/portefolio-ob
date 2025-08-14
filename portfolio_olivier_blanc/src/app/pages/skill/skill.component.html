@@ -1,24 +1,26 @@
 <div class="container">
     <section>
-        <a class="menu desktop" [routerLink]="'/'"> <fa-icon [icon]="faHouse"></fa-icon></a>
-
+        <div class="home-icon">
+            <a [routerLink]="'/'"> <fa-icon [icon]="faHouse"></fa-icon></a>
+        </div>
+        <h2>Compétences</h2>
         <div>
-            <h2>Hard Skill</h2>
+            <h3>Hard Skill</h3>
             @for (skill of skills; track $index) {
             @if (skill.hardSkill == true) {
             <ui-card>
-                <h3>{{skill.name}}</h3>
+                <h4>{{skill.name}}</h4>
             </ui-card>
             }
             }
         </div>
         <div>
-            <h2> Soft Skill</h2>
+            <h3> Soft Skill</h3>
 
             @for (skill of skills; track $index) {
             @if (skill.hardSkill == false) {
             <ui-card>
-                <h3>{{skill.name}}</h3>
+                <h4>{{skill.name}}</h4>
             </ui-card>
             }
             }

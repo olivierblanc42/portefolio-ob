@@ -15,30 +15,39 @@ $padding-xll: 80px;
 
 
 
+
+
 header {
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
-    .div-footer {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      padding: $padding-s ;
-    }
+
+
+
+.div-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: $padding-s ;
+
+}
 
 
 
 
 .main-nav {
-  padding: $padding-s  ;
-  h1{
+  padding: $padding-s ;
+
+  h1 {
     text-align: center;
   }
-  div{
+
+  div {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     padding-bottom: $padding-s ;
   }
@@ -166,31 +175,74 @@ footer {
 
 
 /* Téléphones moyens à grands (portrait et paysage) */
-@media (min-width: 481px) and (max-width: 767px) {}
+@media (min-width: 481px) {}
 
 /* Tablettes (portrait) */
-@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 768px) {
+
+}
 
 /* Tablettes (paysage) */
-@media (min-width: 992px) and (max-width: 1199px) {}
+@media (min-width: 992px) {}
 
 /* Styles pour ordinateurs portables */
-@media (min-width: 1200px) and (max-width: 1439px) {}
+@media (min-width: 1024px) {
+  .headerBackground {
+    background-image: url("/images/navBackground.webp");
+    height: 890px;
+    background-position: center;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    div {
+      display: none;
+
+    }
+  }
+
+  .profil {
+    height: 60px;
+    width: 60px;
+  }
+
+    .title {
+      font-size: 36px;
+      text-transform: uppercase;
+      border: solid white 1px;
+      padding: $padding $padding-l;
+    }
+ 
+
+
+  .div-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
 
 /* Styles pour grands écrans (desktop) */
 @media (min-width: 1440px) {
 
   .headerBackground {
-    background-image: url("/images/navBackground.webp");
-    height: 890px;
+
+    background-position: auto;
   }
 
-  .title {
-    font-size: 36px;
-    text-transform: uppercase;
-    border: solid white 1px;
-    padding: $padding $padding-l;
-  }
 
 
 
@@ -202,14 +254,5 @@ footer {
 
 
 
-  .div-footer,
-  .main-nav {
-    // margin-left: 210px;
-    // margin-right: 210px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
 
 }

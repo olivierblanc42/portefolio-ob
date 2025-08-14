@@ -1,6 +1,8 @@
 <div class="container">
     <section>
-        <a class="menu desktop" [routerLink]="'/'"> <fa-icon [icon]="faHouse"></fa-icon></a>
+        <div  class="home-icon">
+            <a [routerLink]="'/'"> <fa-icon [icon]="faHouse"></fa-icon></a>
+        </div>
         <div>
             @for (hobby of hobbies; track $index) {
 

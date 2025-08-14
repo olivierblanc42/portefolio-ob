@@ -1,6 +1,8 @@
 <div class="container">
     <section>
-        <a class="menu desktop" [routerLink]="'/'"> <fa-icon [icon]="faHouse"></fa-icon></a>
+        <div class="home-icon">
+            <a [routerLink]="'/'"> <fa-icon [icon]="faHouse"></fa-icon></a>
+        </div>        <h2>Diplomes</h2>
         @for (diplome of diplomes; track $index) {
         <ui-card>
             <h3>{{diplome.name}}</h3>
