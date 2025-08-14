@@ -1,4 +1,3 @@
-
 // Margins
 $margin-s: 20px;
 $margin: 40px;
@@ -11,19 +10,18 @@ $padding: 20px;
 $padding-l: 40px;
 $padding-xl: 60px;
 $padding-xll: 80px;
+
 .card {
-    //min-width: 218px;
-    //max-width: 218px;
-    //min-height: 450px;
-    //max-height: 450px;
+
     width: 80%;
+    max-width: 200px;
     background-color: white;
     color: black;
-    margin:$margin-s ;
-    border-radius:5px ;
-    -webkit-border-radius:5px ;
-    -moz-border-radius:5px ;
-    -ms-border-radius:5px ;
-    -o-border-radius:5px ;
+    margin: $margin-s auto;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
     padding: $padding-s;
 }
