@@ -3,12 +3,15 @@
         <div class="home-icon">
             <a [routerLink]="'/'"> <fa-icon [icon]="faHouse"></fa-icon></a>
         </div>        <h2>Diplomes</h2>
-        @for (diplome of diplomes; track $index) {
-        <ui-card>
-            <h3>{{diplome.name}}</h3>
-            <p>{{diplome.years |date:'yyyy'}}</p>
-            <p>{{diplome.establishment}}</p>
-        </ui-card>
-        }
+        <div class="content">
+            @for (diplome of diplomes; track $index) {
+            <ui-card size="card-diplome">
+                <h3>{{diplome.name}}</h3>
+                <p>{{diplome.years |date:'yyyy'}}</p>
+                <p>{{diplome.establishment}}</p>
+            </ui-card>
+            }
+        </div>
+   
     </section>
 </div>

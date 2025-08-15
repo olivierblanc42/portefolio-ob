@@ -1,3 +1,9 @@
-<article class="card">
+<article class="card" [ngClass]="{
+    'card-skill':size === 'card-skill',
+    'card-diplome':size  === 'card-diplome',
+    'card-hobby':size  === 'card-hobby',
+    'card-realization':size  === 'card-realization',
+
+}">
             <ng-content></ng-content>
 </article>

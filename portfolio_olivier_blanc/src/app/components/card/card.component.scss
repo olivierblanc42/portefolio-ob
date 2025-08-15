@@ -12,7 +12,6 @@ $padding-xl: 60px;
 $padding-xll: 80px;
 
 .card {
-
     width: 80%;
     max-width: 200px;
     background-color: white;
@@ -25,4 +24,8 @@ $padding-xll: 80px;
     -o-border-radius: 5px;
     padding: $padding-s;
     box-shadow: 5px 5px 5px black;
+    &.card-diplome {
+            height: 220px;
+        }
 }
+
