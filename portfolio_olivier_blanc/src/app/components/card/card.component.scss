@@ -24,8 +24,26 @@ $padding-xll: 80px;
     -o-border-radius: 5px;
     padding: $padding-s;
     box-shadow: 5px 5px 5px black;
-    &.card-diplome {
-            height: 220px;
-        }
-}
 
+    >p {
+        padding: 0px;
+    }
+
+    &.card-diplome {
+        height: 220px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &.card-hobby {
+        height: 50px;
+    }
+
+    &.card-skill {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

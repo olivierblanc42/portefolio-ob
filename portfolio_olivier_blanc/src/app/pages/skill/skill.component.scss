@@ -1,0 +1,25 @@
+.content-skills {}
+
+
+img {
+    height: 32px;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .content-skills {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: top;
+
+        div {
+            width: 45%;
+        }
+    }
+}
+
+
+@media (min-width: 1024px) {}

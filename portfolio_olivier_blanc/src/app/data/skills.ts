@@ -4,49 +4,49 @@ export const skillList: Skill[] = [
   {
         id: 1,
         name: 'HTML 5',
-        urlImage: '',
+        urlImage: 'https://i.postimg.cc/MHfDKnVB/html.webp',
         hardSkill: true
   },
     {
         id: 2,
         name: 'CSS3',
-        urlImage: '',
+        urlImage: 'https://i.postimg.cc/wxSK5JWS/css-3.webp',
         hardSkill: true
     }, 
     {
         id:3,
         name: 'JavaScript',
-        urlImage: '',
+        urlImage: 'https://i.postimg.cc/VsSQb4Fq/js.webp',
         hardSkill: true
     }, 
     {
         id: 4,
         name: 'PHP',
-        urlImage: '',
+        urlImage: 'https://i.postimg.cc/7Y7FK6db/php.webp',
         hardSkill: true
     },
     {
         id: 5,
         name: 'Angular',
-        urlImage: '',
+        urlImage: 'https://i.postimg.cc/63mcXr2w/programing.webp',
         hardSkill: true
     },
     {
         id: 6,
         name: 'Git',
-        urlImage: '',
+        urlImage: 'https://i.postimg.cc/rmmj3npQ/git.webp',
         hardSkill: true
     },
     {
         id: 7,
         name: 'Spring Boot',
-        urlImage: '',
+        urlImage: 'https://i.postimg.cc/JtwQyR52/spring-boot-icon.webp',
         hardSkill: true
     },
     {
         id: 8,
-        name: 'SQL',
-        urlImage: '',
+        name: 'MYSQL',
+        urlImage: 'https://i.postimg.cc/g2WfQpbs/mysql.webp',
         hardSkill: true
     },
     {

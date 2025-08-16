@@ -1,16 +1,19 @@
 <div class="container">
-    <section>
-        <div  class="home-icon">
-            <a [routerLink]="'/'"> <fa-icon [icon]="faHouse"></fa-icon></a>
-        </div>
-        <div>
-            @for (hobby of hobbies; track $index) {
+    <section class="section">
+        <div class="section-div">
+            <div class="home-icon">
+                <a [routerLink]="'/'"> <fa-icon [icon]="faHouse"></fa-icon></a>
+            </div>
+            <div class="content">
+                @for (hobby of hobbies; track $index) {
 
-            <ui-card>
-                <h3>{{hobby.name}}</h3>
-            </ui-card>
-            }
+                <ui-card size="card-hobby">
+                    <h3>{{hobby.name}}</h3>
+                </ui-card>
+                }
+            </div>
         </div>
+
 
     </section>
 </div>

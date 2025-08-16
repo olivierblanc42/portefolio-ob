@@ -1,32 +1,41 @@
 <div class="container">
-    <section>
-        <div class="home-icon">
-            <a [routerLink]="'/'"> <fa-icon [icon]="faHouse"></fa-icon></a>
+    <section class="section">
+
+        <div class="section-div">
+            <div class="home-icon">
+                <a [routerLink]="'/'"> <fa-icon [icon]="faHouse"></fa-icon></a>
+            </div>
+            <div>
+                <h2>Compétences</h2>
+                <div class="content-skills">
+                    <div>
+                        <h3>Hard Skill</h3>
+                        @for (skill of skills; track $index) {
+                        @if (skill.hardSkill == true) {
+                        <ui-card>
+                            <h4>{{skill.name}}</h4>
+                            <img src="{{skill.urlImage}}" alt="{{skill.name}} icon">
+
+                        </ui-card>
+                        }
+                        }
+                    </div>
+                    <div>
+                        <h3> Soft Skill</h3>
+
+                        @for (skill of skills; track $index) {
+                        @if (skill.hardSkill == false) {
+                        <ui-card>
+                            <h4>{{skill.name}}</h4>
+                        </ui-card>
+                        }
+                        }
+
+                    </div>
+                </div>
+
+            </div>
+
         </div>
-        <h2>Compétences</h2>
-        <div>
-            <h3>Hard Skill</h3>
-            @for (skill of skills; track $index) {
-            @if (skill.hardSkill == true) {
-            <ui-card>
-                <h4>{{skill.name}}</h4>
-            </ui-card>
-            }
-            }
-        </div>
-        <div>
-            <h3> Soft Skill</h3>
-
-            @for (skill of skills; track $index) {
-            @if (skill.hardSkill == false) {
-            <ui-card>
-                <h4>{{skill.name}}</h4>
-            </ui-card>
-            }
-            }
-
-        </div>
-
-
     </section>
 </div>
