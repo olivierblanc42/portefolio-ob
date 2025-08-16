@@ -1,0 +1,9 @@
+[build]
+  base = "portfolio_olivier_blanc"
+  publish = "dist/portfolio_olivier_blanc/browser"
+  command = "npm ci && npx ng build --configuration=production"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
