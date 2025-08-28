@@ -2,32 +2,34 @@
 
 /* Variables */
 
-//font
+@use '_variables.scss' as *;
 
+//font
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
+
 // Colors
-$main-color: #336699;
-$main-color-50: rgba(51, 102, 153, 0.5);
-$second-color: #86BBD8;
-$third-color: #2F4858;
-$annexe-color: #96694D;
-$annexe-color-hover: #BC8360;
+// $main-color: #336699;
+// $main-color-50: rgba(51, 102, 153, 0.5);
+// $second-color: #86BBD8;
+// $third-color: #2F4858;
+// $annexe-color: #96694D;
+// $annexe-color-hover: #BC8360;
 
 // Margins
-$margin-s: 20px;
-$margin: 40px;
-$margin-l: 60px;
-$margin-xl: 80px;
-$margin-xll: 100px;
+// $margin-s: 20px;
+// $margin: 40px;
+// $margin-l: 60px;
+// $margin-xl: 80px;
+// $margin-xll: 100px;
 
 // Padding
-$padding-s: 10px;
-$padding: 20px;
-$padding-l: 40px;
-$padding-xl: 60px;
-$padding-xll: 80px;
+// $padding-s: 10px;
+// $padding: 20px;
+// $padding-l: 40px;
+// $padding-xl: 60px;
+// $padding-xll: 80px;
 
 
 body {
@@ -122,6 +124,12 @@ a {
 
 .home-icon {
   margin-bottom: $margin-s;
+}
+
+
+.form{
+  display: flex;
+  flex-direction: column;
 }
 
 /* Téléphones moyens à grands (portrait et paysage) */
