@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Router } from '@angular/router';
 import { FaIconComponent } from '@fortawesome/angular-fontawesome';
 import { faHouse } from '@fortawesome/free-solid-svg-icons';
 import { NgForm, FormsModule, ReactiveFormsModule, FormGroup, FormControl, Validators } from '@angular/forms';
@@ -13,14 +13,18 @@ import { CommonModule } from '@angular/common';
 })
 export class ContactComponent implements OnInit {
   faHouse = faHouse;
+  success = false;
   formGroup = new FormGroup({
-    email: new FormControl('', [Validators.required]),
+    email: new FormControl('', [Validators.required, Validators.email]),
     firstName: new FormControl('', [Validators.required]),
     lastName: new FormControl('', [Validators.required]),
     text: new FormControl('', [Validators.required]),
 
   })
+  constructor(
+    private router: Router,
 
+  ) { }
   ngOnInit(): void {
   }
 
@@ -34,7 +38,29 @@ export class ContactComponent implements OnInit {
     if (this.formGroup.invalid) {
       return
     }
+
     console.log(this.formGroup.value);
+    this.success = true;
+    // this.router.navigate(['/']); 
+
+    
+     
+    if (this.success == true){
+     setTimeout(()=>{
+       this.success = false
+     },5000)
+
+      setTimeout(() => {
+        this.formGroup.reset({
+
+        });
+      }, 5000)
+
+    }
+
+
+
+
   }
 
 

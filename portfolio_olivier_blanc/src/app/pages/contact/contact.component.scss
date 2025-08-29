@@ -25,7 +25,8 @@
     }
 
     .form-content {
-                padding: $padding-s;
+        padding: $padding-s;
+
         .form-div {
             display: flex;
             flex-direction: column;
@@ -64,7 +65,18 @@
     }
 }
 
-.text-warning{
+.text-warning {
     color: red;
     padding-top: $padding-s;
+}
+
+
+.div-success {
+    height: 20px;
+    padding-bottom: $padding-s;
+
+    .success-message {
+        color: green;
+        text-align: center;
+    }
 }
