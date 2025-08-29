@@ -4,27 +4,58 @@
             <div class="home-icon">
                 <a [routerLink]="'/'"> <fa-icon [icon]="faHouse"></fa-icon></a>
             </div>
-            <form class="form form-contact" #ContactForm="ngForm">
-                <h2>Contact</h2>
-                <div class="form-div">
-                    <label for="name">Email :</label>
-                    <input type="text">
-                </div>
-                <div class="form-div">
-                    <label for="name">Nom :</label>
-                    <input type="text">
-                </div>
-                <div class="form-div">
-                    <label for="name">Prénom :</label>
-                    <input type="text">
+            <form class="form form-contact" [formGroup]="formGroup" method="POST" name="contact" data-netlify="true"
+                (ngSubmit)="onSubmit()">
+                <div class="form-title">
+                    <h2>Contact</h2>
                 </div>
 
-                <div class="form-div">
-                    <label for="name"   >Message :</label>
-                    <textarea  rows="5" placeholder="Votre message..."  > </textarea>
+                <div class="form-content">
+                    <div class="form-div">
+                        <label for="email">Email :</label>
+                        <input formControlName="email" type="text"
+                            [class.is-invalid]="isInvalidAndTouchedOrDirty(formGroup.controls.email)">
+                        <small class="text-warning" *ngIf="isInvalidAndTouchedOrDirty(formGroup.controls.email)">
+                            <ng-container *ngIf="formGroup.controls.email.hasError('required')" >
+                                L’e-mail est obligatoire </ng-container>
+                        </small>
+                    </div>
+                    <div class="form-div">
+                        <label for="lastName">Nom :</label>
+                        <input formControlName="lastName" type="text"  
+                        [class.is-invalid]="isInvalidAndTouchedOrDirty(formGroup.controls.lastName)"
+                        >
+                        <small class="text-warning" *ngIf="isInvalidAndTouchedOrDirty(formGroup.controls.lastName)">
+                            <ng-container *ngIf="formGroup.controls.lastName.hasError('required')">
+                                Le nom est obligatoire </ng-container>
+                        </small>
+                    </div>
+                    <div class="form-div">
+                        <label for="firstName">Prénom :</label>
+                        <input formControlName="firstName" type="text"
+                        [class.is-invalid]="isInvalidAndTouchedOrDirty(formGroup.controls.firstName)"
+                        >
+                        <small class="text-warning" *ngIf="isInvalidAndTouchedOrDirty(formGroup.controls.firstName)">
+                            <ng-container *ngIf="formGroup.controls.firstName.hasError('required')">
+                                Le Prénom est obligatoire </ng-container>
+                        </small>
+                    </div>
 
+                    <div class="form-div">
+                        <label for="text">Message :</label>
+                        <textarea formControlName="text" rows="5" placeholder="Votre message..."
+                          [class.is-invalid]="isInvalidAndTouchedOrDirty(formGroup.controls.text)"
+                        
+                        > </textarea>
+                            <small class="text-warning" *ngIf="isInvalidAndTouchedOrDirty(formGroup.controls.text)">
+                                <ng-container *ngIf="formGroup.controls.text.hasError('required')">
+                                   Un texte est obligatoire </ng-container>
+                            </small>
+
+                    </div>
                 </div>
-                <button class="btn" type="submit" [disabled]="!ContactForm.valid"   >Submit</button>
+
+                <button class="btn" type="submit">Submit</button>
 
             </form>
         </div>
