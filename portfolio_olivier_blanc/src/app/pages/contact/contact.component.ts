@@ -8,7 +8,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-contact',
-  imports: [FaIconComponent, RouterModule, FormsModule, ReactiveFormsModule, CommonModule],
+  imports: [FaIconComponent, RouterModule, FormsModule, ReactiveFormsModule, CommonModule,],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
@@ -27,7 +27,7 @@ export class ContactComponent implements OnInit {
 
   constructor(
     private router: Router, 
-    private http: HttpClient
+  
   ) { }
   ngOnInit(): void {
   }
@@ -48,26 +48,11 @@ export class ContactComponent implements OnInit {
       lastName: this.formGroup.value.lastName || '',
       text: this.formGroup.value.text || ''
     }
-    const headers = new HttpHeaders({
-      Accept: 'text/html',
-      'Content-Type': 'application/x-www-form-urlencoded',
-    });
-    this.http
-      .post('/', new URLSearchParams(formData).toString(), { headers, responseType: 'text' })
-      .subscribe(() => {
-        this.success = true;
-        if (this.success == true) {
-          setTimeout(() => {
-            this.success = false
-          }, 5000)
-
-          setTimeout(() => {
-            this.formGroup.reset({
-            });
-          }, 5000)
-
-        }
-      });
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString()
+    })
 
     this.formGroup.markAllAsTouched();
     if (this.formGroup.invalid) {
@@ -77,3 +62,17 @@ export class ContactComponent implements OnInit {
 
 
 }
+
+
+// this.success = true;
+// if (this.success == true) {
+//   setTimeout(() => {
+//     this.success = false
+//   }, 5000)
+
+//   setTimeout(() => {
+//     this.formGroup.reset({
+//     });
+//   }, 5000)
+
+// }
