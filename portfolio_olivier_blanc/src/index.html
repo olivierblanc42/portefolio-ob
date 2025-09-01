@@ -8,6 +8,17 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+
+<!-- Formulaire statique caché pour Netlify -->
+<form name="contact" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true"
+  style="display:none;">
+  <input type="text" name="email" />
+  <input type="text" name="lastName" />
+  <input type="text" name="firstName" />
+  <textarea name="text"></textarea>
+  <input type="hidden" name="form-name" value="name_of_my_form" />
+  <div data-netlify-recaptcha="true"></div>
+</form>
   <app-root></app-root>
 </body>
 </html>
