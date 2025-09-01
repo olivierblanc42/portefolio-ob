@@ -41,7 +41,6 @@ export class ContactComponent implements OnInit {
 
     console.log(this.formGroup.value);
     this.success = true;
-    // this.router.navigate(['/']); 
 
     
      

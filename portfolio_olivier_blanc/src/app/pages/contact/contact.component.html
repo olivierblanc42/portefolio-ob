@@ -4,17 +4,25 @@
             <div class="home-icon">
                 <a [routerLink]="'/'"> <fa-icon [icon]="faHouse"></fa-icon></a>
             </div>
-            <form class="form form-contact" [formGroup]="formGroup" method="POST" name="contact" data-netlify="true"
-                (ngSubmit)="onSubmit()">
+            <form netlify-honeypot="bot-field" class="form form-contact" [formGroup]="formGroup" method="POST"
+                data-netlify-recaptcha="true" name="contact" data-netlify="true" (ngSubmit)="onSubmit()">
                 <div class="form-title">
                     <h2>Contact</h2>
                 </div>
 
-
+                <input type="hidden" name="form-name" value="name_of_my_form" />
                 <div class="form-content">
+
+                    <div class="hidden">
+                        <label>
+                            Don’t fill this out if you’re human: <input name="bot-field" type="text" />
+                        </label>
+                    </div>
+
+
                     <div class="form-div">
                         <label for="email">Email :</label>
-                        <input formControlName="email" type="text"
+                        <input formControlName="email" type="text" name="email"
                             [class.is-invalid]="isInvalidAndTouchedOrDirty(formGroup.controls.email)">
                         <small class="text-warning" *ngIf="isInvalidAndTouchedOrDirty(formGroup.controls.email)">
                             <ng-container *ngIf="formGroup.controls.email.hasError('required')">
@@ -25,7 +33,7 @@
                     </div>
                     <div class="form-div">
                         <label for="lastName">Nom :</label>
-                        <input formControlName="lastName" type="text"
+                        <input formControlName="lastName" type="text" name="lastName"
                             [class.is-invalid]="isInvalidAndTouchedOrDirty(formGroup.controls.lastName)">
                         <small class="text-warning" *ngIf="isInvalidAndTouchedOrDirty(formGroup.controls.lastName)">
                             <ng-container *ngIf="formGroup.controls.lastName.hasError('required')">
@@ -34,7 +42,7 @@
                     </div>
                     <div class="form-div">
                         <label for="firstName">Prénom :</label>
-                        <input formControlName="firstName" type="text"
+                        <input formControlName="firstName" type="text" name="firstName"
                             [class.is-invalid]="isInvalidAndTouchedOrDirty(formGroup.controls.firstName)">
                         <small class="text-warning" *ngIf="isInvalidAndTouchedOrDirty(formGroup.controls.firstName)">
                             <ng-container *ngIf="formGroup.controls.firstName.hasError('required')">
@@ -44,13 +52,12 @@
 
                     <div class="form-div">
                         <label for="text">Message :</label>
-                        <textarea formControlName="text" rows="5" placeholder="Votre message..."
+                        <textarea formControlName="text" rows="5" placeholder="Votre message..." name="text"
                             [class.is-invalid]="isInvalidAndTouchedOrDirty(formGroup.controls.text)"> </textarea>
                         <small class="text-warning" *ngIf="isInvalidAndTouchedOrDirty(formGroup.controls.text)">
                             <ng-container *ngIf="formGroup.controls.text.hasError('required')">
                                 Un texte est obligatoire </ng-container>
                         </small>
-
                     </div>
                 </div>
 
@@ -61,7 +68,9 @@
                 </div>
 
                 <button class="btn" type="submit">Submit</button>
-
+                <div class="form-div">
+                    <div data-netlify-recaptcha="true"></div>
+                </div>
             </form>
 
 
