@@ -5,7 +5,7 @@
                 <a [routerLink]="'/'"> <fa-icon [icon]="faHouse"></fa-icon></a>
             </div>
             <form netlify-honeypot="bot-field" class="form form-contact" [formGroup]="formGroup" method="POST"
-                data-netlify-recaptcha="true" name="contact" data-netlify="true" (ngSubmit)="onSubmit($event)">
+                data-netlify-recaptcha="true" name="contact" data-netlify="true" (ngSubmit)="onSubmit()">
                 <div class="form-title">
                     <h2>Contact</h2>
                 </div>
@@ -13,7 +13,7 @@
                 <input type="hidden" name="form-name" value="contact" />
 
 
-                
+
                 <div class="form-content">
 
                     <div class="hidden">

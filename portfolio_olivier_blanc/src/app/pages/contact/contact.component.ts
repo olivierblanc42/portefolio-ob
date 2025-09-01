@@ -37,8 +37,8 @@ export class ContactComponent implements OnInit {
     return formControl.invalid && (formControl.touched || formControl.dirty);
   }
 
-  onSubmit(evt: SubmitEvent) {
-    evt.preventDefault();
+  onSubmit() {
+    
 
 
     const formData = {
