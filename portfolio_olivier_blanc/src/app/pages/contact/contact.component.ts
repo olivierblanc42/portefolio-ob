@@ -41,16 +41,15 @@ export class ContactComponent implements OnInit {
 
     this.success = true;
 
-    
-     
-    if (this.success == true){
-     setTimeout(()=>{
-       this.success = false
-     },5000)
+
+
+    if (this.success == true) {
+      setTimeout(() => {
+        this.success = false
+      }, 5000)
 
       setTimeout(() => {
         this.formGroup.reset({
-
         });
       }, 5000)
 
