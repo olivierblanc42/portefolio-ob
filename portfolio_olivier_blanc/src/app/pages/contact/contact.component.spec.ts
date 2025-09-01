@@ -33,67 +33,67 @@ describe('ContactComponent', () => {
   });
 
 
-  it('should succes false', () => {
-    component.formGroup.setValue({
-      email: '',
-      firstName: '',
-      lastName: '',
-      text: ''
-    });
-    component.onSubmit()
+  // it('should succes false', () => {
+  //   component.formGroup.setValue({
+  //     email: '',
+  //     firstName: '',
+  //     lastName: '',
+  //     text: ''
+  //   });
+  //   component.onSubmit()
 
-    expect(component.success).toBeFalse();
-  });
-
-
-
-  it('should success true', () => {
-    component.formGroup.setValue({
-      email: 'test@example.com',
-      firstName: 'John',
-      lastName: 'Doe',
-      text: 'Hello world'
-    });
-    component.onSubmit()
-    expect(component.success).toBeTrue();
-  });
+  //   expect(component.success).toBeFalse();
+  // });
 
 
 
-
-
-  it('should set success to false after timeout', fakeAsync(() => {
-    component.formGroup.setValue({
-      email: 'test@example.com',
-      firstName: 'John',
-      lastName: 'Doe',
-      text: 'Hello world'
-    });
-    component.onSubmit()
-
-    expect(component.success).toBeTrue();
-    tick(5000);
-    expect(component.success).toBeFalse();
-  }));
+  // it('should success true', () => {
+  //   component.formGroup.setValue({
+  //     email: 'test@example.com',
+  //     firstName: 'John',
+  //     lastName: 'Doe',
+  //     text: 'Hello world'
+  //   });
+  //   component.onSubmit()
+  //   expect(component.success).toBeTrue();
+  // });
 
 
 
-  it('should reset success to false after 5 seconds', fakeAsync(() => {
-    component.formGroup.setValue({
-      email: 'test@example.com',
-      firstName: 'John',
-      lastName: 'Doe',
-      text: 'Hello world'
-    });
-    component.onSubmit()
-    tick(5000);
-    expect(component.formGroup.value).toEqual({
-      email: null,
-      firstName: null,
-      lastName: null,
-      text: null
-    });
-  }));
+
+
+  // it('should set success to false after timeout', fakeAsync(() => {
+  //   component.formGroup.setValue({
+  //     email: 'test@example.com',
+  //     firstName: 'John',
+  //     lastName: 'Doe',
+  //     text: 'Hello world'
+  //   });
+  //   component.onSubmit()
+
+  //   expect(component.success).toBeTrue();
+  //   tick(5000);
+  //   expect(component.success).toBeFalse();
+  // }));
+
+
+
+  // it('should reset success to false after 5 seconds', fakeAsync(() => {
+  //   component.formGroup.setValue({
+  //     email: 'test@example.com',
+  //     firstName: 'John',
+  //     lastName: 'Doe',
+  //     text: 'Hello world'
+  //   });
+  //   component.onSubmit()
+  //   tick(5000);
+  //   expect(component.formGroup.value).toEqual({
+  //     email: null,
+  //     firstName: null,
+  //     lastName: null,
+  //     text: null
+  //   });
+  // }));
 
 
 

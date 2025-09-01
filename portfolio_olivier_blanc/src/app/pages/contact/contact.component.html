@@ -5,12 +5,15 @@
                 <a [routerLink]="'/'"> <fa-icon [icon]="faHouse"></fa-icon></a>
             </div>
             <form netlify-honeypot="bot-field" class="form form-contact" [formGroup]="formGroup" method="POST"
-                data-netlify-recaptcha="true" name="contact" data-netlify="true" (ngSubmit)="onSubmit()">
+                data-netlify-recaptcha="true" name="contact" data-netlify="true" (ngSubmit)="onSubmit($event)">
                 <div class="form-title">
                     <h2>Contact</h2>
                 </div>
 
                 <input type="hidden" name="form-name" value="contact" />
+
+
+                
                 <div class="form-content">
 
                     <div class="hidden">
@@ -23,7 +26,7 @@
                     <div class="form-div">
                         <label for="email">Email :</label>
                         <input formControlName="email" type="text" name="email"
-                            [class.is-invalid]="isInvalidAndTouchedOrDirty(formGroup.controls.email)">
+                            [class.is-invalid]="isInvalidAndTouchedOrDirty(formGroup!.controls.email)">
                         <small class="text-warning" *ngIf="isInvalidAndTouchedOrDirty(formGroup.controls.email)">
                             <ng-container *ngIf="formGroup.controls.email.hasError('required')">
                                 L’e-mail est obligatoire </ng-container>
