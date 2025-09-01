@@ -39,7 +39,6 @@ export class ContactComponent implements OnInit {
       return
     }
 
-    console.log(this.formGroup.value);
     this.success = true;
 
     
