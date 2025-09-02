@@ -36,33 +36,32 @@ export class ContactComponent implements OnInit {
   onSubmit() {
     this.formGroup.markAllAsTouched();
     if (this.formGroup.invalid) {
-      return;
+      return
     }
 
-    const data = {
-      "form-name": "contact",
-      "email": this.formGroup.value.email || "",
-      "lastName": this.formGroup.value.lastName || "",
-      "firstName": this.formGroup.value.firstName || "",
-      "text": this.formGroup.value.text || "",
-      "bot-field": ""
-    };
+    console.log(this.formGroup.value);
+    this.success = true;
+    // this.router.navigate(['/']); 
 
-    const encoded = new URLSearchParams(data).toString();
+    
+     
+    if (this.success == true){
+     setTimeout(()=>{
+       this.success = false
+     },5000)
 
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encoded
-    })
-      .then(() => {
-        this.success = true;
-        this.formGroup.reset();
-        setTimeout(() => (this.success = false), 5000);
-      })
-      .catch((error) => alert("Erreur: " + error));
+      setTimeout(() => {
+        this.formGroup.reset({
+
+        });
+      }, 5000)
+
+    }
+
+
+
+
   }
-
 
 
 }
