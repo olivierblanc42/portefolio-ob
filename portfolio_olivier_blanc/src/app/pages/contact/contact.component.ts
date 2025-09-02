@@ -36,37 +36,33 @@ export class ContactComponent implements OnInit {
   onSubmit() {
     this.formGroup.markAllAsTouched();
     if (this.formGroup.invalid) {
-      return
+      return;
     }
 
-    const formData = new FormData();
-    formData.append("form-name", "contact");
-    formData.append("email", this.formGroup.value.email || "");
-    formData.append("lastName", this.formGroup.value.lastName || "");
-    formData.append("firstName", this.formGroup.value.firstName || "");
-    formData.append("text", this.formGroup.value.text || "");
-    formData.append("bot-field", "");
+    const data = {
+      "form-name": "contact",
+      "email": this.formGroup.value.email || "",
+      "lastName": this.formGroup.value.lastName || "",
+      "firstName": this.formGroup.value.firstName || "",
+      "text": this.formGroup.value.text || "",
+      "bot-field": ""
+    };
 
-    
-     
-    fetch("https://portefolio-olivier-blanc.netlify.app/", {
+    const encoded = new URLSearchParams(data).toString();
+
+    fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData as any).toString()
-        })
+      body: encoded
+    })
       .then(() => {
         this.success = true;
-
         this.formGroup.reset();
-
         setTimeout(() => (this.success = false), 5000);
       })
       .catch((error) => alert("Erreur: " + error));
-
-
-
-
   }
+
 
 
 }
