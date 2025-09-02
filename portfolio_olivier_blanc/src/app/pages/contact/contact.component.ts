@@ -58,9 +58,7 @@ export class ContactComponent implements OnInit {
         this.success = true;
 
         this.formGroup.reset();
-        for (let pair of formData.entries()) {
-          console.log(pair[0], pair[1]);
-        }
+
         setTimeout(() => (this.success = false), 5000);
       })
       .catch((error) => alert("Erreur: " + error));
