@@ -51,7 +51,8 @@ export class ContactComponent implements OnInit {
      
     fetch("/", {
       method: "POST",
-      body: formData,
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: formData.toString()
     })
       .then(() => {
         this.success = true;
