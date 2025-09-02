@@ -57,6 +57,7 @@ header {
 .menu {
   text-transform: uppercase;
   cursor: pointer;
+
   span {
     display: none;
   }
@@ -190,21 +191,26 @@ footer {
     width: 920px;
     margin-left: auto;
     margin-right: auto;
-        div {
-            display: none;
-        
-          }
+
+    div {
+      display: none;
+
+    }
   }
 
+  .div-footer {
+    width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
+  .desktop {
+    display: block;
+  }
 
-    .desktop {
-      display: block;
-    }
-  
-    .mobile {
-      display: none;
-    }
+  .mobile {
+    display: none;
+  }
 
 }
 
@@ -239,6 +245,12 @@ footer {
     }
   }
 
+  .div-footer {
+    width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .profil {
     height: 60px;
     width: 60px;
@@ -253,12 +265,7 @@ footer {
 
 
 
-  .div-footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
+
 }
 
 /* Styles pour ordinateurs portables */
@@ -266,6 +273,12 @@ footer {
   .main-nav {
     width: 1120px;
   }
+
+  .div-footer {
+    width: 1120px;
+  }
+
+
 }
 
 
