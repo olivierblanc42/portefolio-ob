@@ -45,6 +45,7 @@ export class ContactComponent implements OnInit {
     formData.append("lastName", this.formGroup.value.lastName || "");
     formData.append("firstName", this.formGroup.value.firstName || "");
     formData.append("text", this.formGroup.value.text || "");
+    formData.append("bot-field", "");
 
     
      
@@ -54,8 +55,11 @@ export class ContactComponent implements OnInit {
     })
       .then(() => {
         this.success = true;
-        console.log(formData)
+
         this.formGroup.reset();
+        for (let pair of formData.entries()) {
+          console.log(pair[0], pair[1]);
+        }
         setTimeout(() => (this.success = false), 5000);
       })
       .catch((error) => alert("Erreur: " + error));
