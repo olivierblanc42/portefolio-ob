@@ -52,8 +52,8 @@ export class ContactComponent implements OnInit {
     fetch("https://portefolio-olivier-blanc.netlify.app/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: formData.toString()
-    })
+      body: new URLSearchParams(formData as any).toString()
+        })
       .then(() => {
         this.success = true;
 
