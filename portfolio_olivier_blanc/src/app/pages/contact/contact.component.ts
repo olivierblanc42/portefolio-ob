@@ -39,24 +39,26 @@ export class ContactComponent implements OnInit {
       return
     }
 
-    console.log(this.formGroup.value);
-    this.success = true;
-    // this.router.navigate(['/']); 
+    const formData = new FormData();
+    formData.append("form-name", "contact");
+    formData.append("email", this.formGroup.value.email || "");
+    formData.append("lastName", this.formGroup.value.lastName || "");
+    formData.append("firstName", this.formGroup.value.firstName || "");
+    formData.append("text", this.formGroup.value.text || "");
 
     
      
-    if (this.success == true){
-     setTimeout(()=>{
-       this.success = false
-     },5000)
-
-      setTimeout(() => {
-        this.formGroup.reset({
-
-        });
-      }, 5000)
-
-    }
+    fetch("/", {
+      method: "POST",
+      body: formData,
+    })
+      .then(() => {
+        this.success = true;
+        console.log(formData)
+        this.formGroup.reset();
+        setTimeout(() => (this.success = false), 5000);
+      })
+      .catch((error) => alert("Erreur: " + error));
 
 
 
