@@ -1,6 +1,12 @@
 
+@use '../../../variables.scss' as *;
+
+
+
+
 .primary-section{
-  background-color: #2F4858 ;
+  background-color: $main-color;
+  color: black;
   .section-div{
     div{
       text-align: center;
@@ -22,10 +28,11 @@
 
 .info{
   width: 80%;
-  background-color: #86BBD8;
+  background-color: #ffffff;
   padding: 10px;
   border-radius: 5px;
   margin: 20px auto;
+  color: black;
 }
 
 
@@ -80,4 +87,9 @@
 
 
 
+}
+
+
+.contact{
+  color: white;
 }
