@@ -52,37 +52,37 @@ export const skillList: Skill[] = [
     {
         id: 9,
         name: 'Capacité d\'adaptation',
-        urlImage: '',
+        urlImage: 'https://i.postimg.cc/0QBCxKcF/adaptation.png',
         hardSkill: false
     },
     {
         id: 10,
         name: 'Persévérance',
-        urlImage: '',
+        urlImage: 'https://i.postimg.cc/wvGkHRwK/perseverance.png',
         hardSkill: false
     },
     {
         id: 11,
         name: 'Réactivité',
-        urlImage: '',
+        urlImage: 'https://i.postimg.cc/850bDfZQ/reactivite.png',
         hardSkill: false
     },
     {
         id: 12,
         name: 'Travail d\'équipe',
-        urlImage: '',
+        urlImage: 'https://i.postimg.cc/cHbcZtXP/cotravail.png',
         hardSkill: false
     },
     {
         id: 13,
         name: 'Créativité',
-        urlImage: '',
+        urlImage: 'https://i.postimg.cc/50Rm1Qnh/la-creativite.png',
         hardSkill: false
     },
     {
         id: 14,
         name: 'Pensée critique',
-        urlImage: '',
+        urlImage: 'https://i.postimg.cc/SsvGqYDw/pensee.png',
         hardSkill: false
     },
 ]
