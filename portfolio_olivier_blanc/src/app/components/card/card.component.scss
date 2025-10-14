@@ -47,3 +47,15 @@ $padding-xll: 80px;
         align-items: center;
     }
 }
+
+
+@media (min-width: 768px) {
+.card {
+        &.card-skill {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}

@@ -17,4 +17,9 @@ export const  hobbiesList : Hobby[] = [
         name: 'Apprentissage du Japonais',
         description: 'au vu de la complexité de la langue japonaise apprendre la langue me demande beaucoup d\'application et d\'implication'
     },
+     {
+        id: 4,
+         name: 'Juge Pokémon TCG  (Trading Card Game)',
+         description: 'ce rôle nécessite, un sens de l’équité, de l’écoute et de la concentration.'
+    },
 ]
