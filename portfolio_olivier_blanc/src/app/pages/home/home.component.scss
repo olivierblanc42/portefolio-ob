@@ -36,9 +36,9 @@
 .info {
   width: 80%;
   background-color: #ffffff;
-  padding: 10px;
+  padding: $padding;
   border-radius: 5px;
-  margin: 20px auto;
+  margin: $margin-s auto;
   color: black;
 }
 
@@ -91,6 +91,22 @@
   .container-home {
     padding: 0px;
   }
+        .contact {
+          color: white;
+        }
+    
+        .hook {
+          font-size: 30px;
+          line-height: 40px;
+          margin-top: $margin-s;
+          margin-bottom: $margin-s;
+        }
+    
+        .section-div {
+          h2 {
+            font-size: 35px;
+          }
+        }
 }
 
 /* Styles pour grands écrans (desktop) */
@@ -98,20 +114,7 @@
 
 
 
-  .contact {
-    color: white;
-  }
 
-  .hook {
-    font-size: 30px;
-    line-height: 40px;
-  }
-
-  .section-div {
-    h2 {
-      font-size: 35px;
-    }
-  }
 
 }
 
