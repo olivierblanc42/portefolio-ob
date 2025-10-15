@@ -1,20 +1,27 @@
-
 @use '../../../variables.scss' as *;
 
 
 
 
-.primary-section{
+.primary-section {
   background-color: $main-color;
   color: black;
-  .section-div{
-    div{
+
+  .section-div {
+    text-align: center;
+    div {
       text-align: center;
     }
   }
 }
 
-.infos{
+.container {
+  margin: 0px auto;
+}
+
+
+
+.infos {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -26,7 +33,7 @@
   gap: 20px;
 }
 
-.info{
+.info {
   width: 80%;
   background-color: #ffffff;
   padding: 10px;
@@ -35,57 +42,63 @@
   color: black;
 }
 
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
-// .primary-section{
-//   .section-div{
-//     div{
-//       text-align: center;
-//     }
-//   }
-// }
+  p {
+    margin: 0px;
+  }
+}
 
-// @media (max-width: 1300px) {
-//   .info{
-//     width: 300px;
-//     background-color: #86BBD8;
-//     margin: 20px auto;
-//     padding-top: 10px;
-//     padding-bottom: 20px;
-//     border-radius: 5px;
-//   }
 
-// }
+
 /* Téléphones moyens à grands (portrait et paysage) */
-@media (min-width: 481px) {}
+@media (min-width: 375px) {
+  .contact {
+    width: 350px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+      margin-right: auto;
+  }
+}
 
 /* Tablettes (portrait) */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    .contact {
+        width: 360px;
+
+      }
+}
 
 /* Tablettes (paysage) */
 @media (min-width: 992px) {}
 
 /* Styles pour ordinateurs portables */
 @media (min-width: 1024px) {
-.info {
+  .info {
     width: 45%;
 
   }
-    .container {
-      margin: 0px;
-    
-    }
 
-    .container-home{
-      padding: 0px;
-    }
+  .container {
+    margin: 0px;
+
+  }
+
+  .container-home {
+    padding: 0px;
+  }
 }
 
 /* Styles pour grands écrans (desktop) */
 @media (min-width: 1440px) {
 
- 
 
-.contact {
+
+  .contact {
     color: white;
   }
 
@@ -102,4 +115,6 @@
 
 }
 
-
+.btn-link{
+  background-color: #634532;
+}
