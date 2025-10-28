@@ -13,7 +13,7 @@ $padding-xll: 80px;
 
 .card {
     width: 80%;
-    max-width: 200px;
+    max-width: 350px;
     background-color: white;
     color: black;
     margin: $margin-s auto;
@@ -57,5 +57,14 @@ $padding-xll: 80px;
             justify-content: space-between;
             align-items: center;
         }
+
+                &.card-experience {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: start;
+                    width: 370px;
+                }
+
     }
 }
