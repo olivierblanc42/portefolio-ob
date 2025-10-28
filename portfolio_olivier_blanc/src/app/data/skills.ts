@@ -81,7 +81,7 @@ export const skillList: Skill[] = [
     },
     {
         id: 14,
-        name: 'Pensée critique',
+        name: 'Force de proposition',
         urlImage: 'https://i.postimg.cc/SsvGqYDw/pensee.png',
         hardSkill: false
     },
