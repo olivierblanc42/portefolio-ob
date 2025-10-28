@@ -1,43 +1,46 @@
-
 <div class="page-container">
-  
-<header class="headerBackground">
-  <div class="backgroundColor">
-    <div class="menu-overlay" [class.active]="isMenuOpen" (click)="closeMenuModale()">
-      <div class="menu-content">
-        <a class="close-btn" (click)="closeMenuModale()">×</a>
-        <h2>Menu</h2>
-        <ul>
-          <li><a routerLink="/" (click)="closeMenuModale()">Accueil</a></li>
-          <li><a routerLink="/skill" (click)="closeMenuModale()">Compétence </a></li>
-          <li><a routerLink="/diplomes" (click)="closeMenuModale()">Diplômes</a></li>
-          <li><a routerLink="/loisirs" (click)="closeMenuModale()">Loisirs</a></li>
-          <li><a routerLink="/realisations" (click)="closeMenuModale()">Réalisations</a></li>
-        </ul>
-      </div>
-    </div>
 
-    <nav class="main-nav">
+  <header class="headerBackground">
+    <div class="backgroundColor">
+      <div class="menu-overlay" [class.active]="isMenuOpen" (click)="closeMenuModale()">
+        <div class="menu-content">
+          <a class="close-btn" (click)="closeMenuModale()">×</a>
+          <h2>Menu</h2>
+          <ul>
+            <li><a routerLink="/" (click)="closeMenuModale()">Accueil</a></li>
+            <li><a routerLink="/skill" (click)="closeMenuModale()">Compétence </a></li>
+            <li><a routerLink="/diplomes" (click)="closeMenuModale()">Diplômes</a></li>
+            <li><a routerLink="/realisations" (click)="closeMenuModale()">Réalisations</a></li>
+            <li><a routerLink="/experiences" (click)="closeMenuModale()">Expériences</a></li>
+            <li><a routerLink="/loisirs" (click)="closeMenuModale()">Loisirs</a></li>
+
+
+          </ul>
+        </div>
+      </div>
+
+      <nav class="main-nav">
         <div class="div-mobile">
-          <a class="menu mobile" (click)="openMenu()"> <fa-icon [icon]="faBars" size="2x"></fa-icon><span>menu</span></a>
+          <a class="menu mobile" (click)="openMenu()"> <fa-icon [icon]="faBars"
+              size="2x"></fa-icon><span>menu</span></a>
           <a routerLink="/"><img class="profil mobile" src="/images/photo.webp" alt="photo profil"></a>
         </div>
-      <a class="menu desktop" (click)="openMenu()"> <fa-icon [icon]="faBars" size="2x"></fa-icon><span>menu</span></a>
-      <h1 class="title">PortFolio Olivier Blanc</h1>
+        <a class="menu desktop" (click)="openMenu()"> <fa-icon [icon]="faBars" size="2x"></fa-icon><span>menu</span></a>
+        <h1 class="title">PortFolio Olivier Blanc</h1>
 
-      <a routerLink="/"><img class="profil desktop " src="/images/photo.webp" alt="photo profil"></a>
+        <a routerLink="/"><img class="profil desktop " src="/images/photo.webp" alt="photo profil"></a>
 
-    </nav>
-  </div>
-</header>
+      </nav>
+    </div>
+  </header>
 
-<router-outlet />
+  <router-outlet />
 
 
-<footer>
-  <div class="div-footer">
-    <a>Olivier Blanc</a>
-    <a href="https://www.linkedin.com/in/olivier-blanc-web" target="_blank"><img src="/svg/linkedin.svg"></a>
-  </div>
-</footer>
+  <footer>
+    <div class="div-footer">
+      <a>Olivier Blanc</a>
+      <a href="https://www.linkedin.com/in/olivier-blanc-web" target="_blank"><img src="/svg/linkedin.svg"></a>
+    </div>
+  </footer>
 </div>

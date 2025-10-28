@@ -1,0 +1,41 @@
+<div class="container">
+    <section class="section">
+        <div class="section-div">
+            <div class="home-icon">
+                <a [routerLink]="'/'"> <fa-icon [icon]="faHouse"></fa-icon></a>
+            </div>
+            <h2>Expériences</h2>
+            <div class="content-experience">
+                @for (experience of experiences; track $index) {
+                <ui-card size="card-experience">
+                    <h3>{{experience.name}}</h3>
+                    <div class="info"  ><span >Entreprise :</span>  {{experience.company}} </div>
+                    <div class="info" ><span>Contract :</span>    {{experience.contractType}} </div>
+
+
+                    <div class="info">
+                        <span>Durée :</span>
+                        @if(experience.month != null){
+                        {{experience.month}}
+
+                        }@else{
+                        }
+
+                        @if( experience.yearStart.getTime() === experience.yearEnd.getTime() ){
+                        {{experience.yearStart |date:'yyyy'}}
+                        } @else{
+                        {{experience.yearStart |date:'yyyy'}} -{{experience.yearEnd |date:'yyyy'}}
+                        }
+                    </div>
+                                        <div class="info"> {{experience.description}}</div>
+
+                   
+
+                </ui-card>
+                }
+            </div>
+        </div>
+
+
+    </section>
+</div>

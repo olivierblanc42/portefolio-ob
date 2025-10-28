@@ -9,6 +9,6 @@ import { NgClass } from '@angular/common';
 })
 export class CardComponent {
 
-  @Input() size: "card-skill" | "card-diplome" | "card-hobby" | "card-realization" = "card-skill";
+  @Input() size: "card-skill" | "card-diplome" | "card-hobby" | "card-realization" |"card-experience" = "card-skill";
 
 }

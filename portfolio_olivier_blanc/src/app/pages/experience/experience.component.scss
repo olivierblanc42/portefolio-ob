@@ -1,0 +1,15 @@
+@use '../../../variables.scss' as *;
+
+.content-experience {
+    display: grid;
+    grid-template-columns: repeat(1, 370px);
+    justify-content: center;
+}
+
+.info{
+    padding-bottom:$padding-s ;
+    padding-top: $padding-s;
+    span{
+        font-weight: bold;
+    }
+}
