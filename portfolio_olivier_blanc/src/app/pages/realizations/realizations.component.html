@@ -4,8 +4,35 @@
             <div class="home-icon">
                 <a [routerLink]="'/'"> <fa-icon [icon]="faHouse"></fa-icon></a>
             </div>
-            <h1></h1>
-            <p class="work-in">Work In Progress</p>
+            <h1>Réalisation</h1>
+
+
+            @for (realization of realizations; track $index) {
+            <a target="_blank" href="{{realization.urlSite}}">
+                <ui-card size="card-realization">
+                    <div class="realization-title">
+                        <h2>{{realization.name}}</h2>
+                        <img src="{{realization.iconProjet}}" alt="">
+                    </div>
+                    <div>
+                        @if(realization.langage.length === 1){
+                        <p>Langage :@for (language of realization.langage; track $index) {
+                            {{language}}
+                            } </p>
+                        }@else {
+                        <p>Langages :@for (language of realization.langage; track $index) {
+                            {{language}},
+                            } </p>
+                        }
+                    </div>
+                    <div>
+                        <p>Statut : {{realization.status}}</p>
+                        <p>{{realization.description}}</p>
+                    </div>
+                </ui-card>
+            </a>
+
+            }
         </div>
 
     </section>

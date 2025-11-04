@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { realizationList } from '../../data/realizations' ;
 
 @Injectable({
   providedIn: 'root'
@@ -6,4 +7,10 @@ import { Injectable } from '@angular/core';
 export class RealizationService {
 
   constructor() { }
+
+
+  getRealization(){
+    return realizationList
+  }
+
 }

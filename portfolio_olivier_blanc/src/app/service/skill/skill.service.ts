@@ -11,7 +11,6 @@ export class SkillService {
 
 
   getSkill(): Skill[]  {
-    console.log(skillList);
     return skillList
   }
 }
