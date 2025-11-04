@@ -16,17 +16,17 @@
                     </div>
                     <div>
                         @if(realization.langage.length === 1){
-                        <p>Langage :@for (language of realization.langage; track $index) {
+                        <p> <span>Langage</span> :@for (language of realization.langage; track $index) {
                             {{language}}
                             } </p>
                         }@else {
-                        <p>Langages :@for (language of realization.langage; track $index) {
+                        <p> <span>Langages</span> :@for (language of realization.langage; track $index) {
                             {{language}},
                             } </p>
                         }
                     </div>
                     <div>
-                        <p>Statut : {{realization.status}}</p>
+                        <p> <span>Statut</span>  : {{realization.status}}</p>
                         <p>{{realization.description}}</p>
                     </div>
                 </ui-card>
