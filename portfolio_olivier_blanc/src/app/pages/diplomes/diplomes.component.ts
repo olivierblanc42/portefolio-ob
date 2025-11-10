@@ -6,10 +6,11 @@ import {  faHouse } from '@fortawesome/free-solid-svg-icons';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { CardComponent } from "../../components/card/card.component";
+import { MenuComponent } from "../../components/menu/menu.component";
 
 @Component({
   selector: 'app-diplomes',
-  imports: [FaIconComponent, RouterModule, CommonModule, CardComponent],
+  imports: [FaIconComponent, RouterModule, CommonModule, CardComponent, MenuComponent],
   templateUrl: './diplomes.component.html',
   standalone: true,
   styleUrl: './diplomes.component.scss'

@@ -6,10 +6,11 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { faHouse } from '@fortawesome/free-solid-svg-icons';
 import { CardComponent } from '../../components/card/card.component';
+import { MenuComponent } from "../../components/menu/menu.component";
 
 @Component({
   selector: 'app-experience',
-  imports: [FaIconComponent, RouterModule, CommonModule, CardComponent],
+  imports: [FaIconComponent, RouterModule, CommonModule, CardComponent, MenuComponent],
   templateUrl: './experience.component.html',
   styleUrl: './experience.component.scss'
 })

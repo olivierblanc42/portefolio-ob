@@ -6,11 +6,12 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { CardComponent } from '../../components/card/card.component';
 import { faHouse } from '@fortawesome/free-solid-svg-icons';
+import { MenuComponent } from "../../components/menu/menu.component";
 
 
 @Component({
   selector: 'app-skill',
-  imports: [FaIconComponent, RouterModule, CommonModule, CardComponent],
+  imports: [FaIconComponent, RouterModule, CommonModule, CardComponent, MenuComponent],
   templateUrl: './skill.component.html',
   styleUrl: './skill.component.scss'
 })

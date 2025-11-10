@@ -7,10 +7,11 @@ import { faHouse } from '@fortawesome/free-solid-svg-icons';
 import { Realization } from '../../models';
 import { CommonModule } from '@angular/common';
 import { CardComponent } from '../../components/card/card.component';
+import { MenuComponent } from "../../components/menu/menu.component";
 
 @Component({
   selector: 'app-realisations',
-  imports: [FaIconComponent, RouterModule, CommonModule, CardComponent],
+  imports: [ RouterModule, CommonModule, CardComponent, MenuComponent],
   templateUrl: './realizations.component.html',
   standalone: true,
   styleUrl: './realizations.component.scss'
