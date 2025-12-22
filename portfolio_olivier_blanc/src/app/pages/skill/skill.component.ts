@@ -11,7 +11,7 @@ import { MenuComponent } from "../../components/menu/menu.component";
 
 @Component({
   selector: 'app-skill',
-  imports: [FaIconComponent, RouterModule, CommonModule, CardComponent, MenuComponent],
+  imports: [ RouterModule, CommonModule, CardComponent, MenuComponent],
   templateUrl: './skill.component.html',
   styleUrl: './skill.component.scss'
 })

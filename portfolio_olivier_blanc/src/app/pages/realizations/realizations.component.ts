@@ -11,7 +11,7 @@ import { MenuComponent } from "../../components/menu/menu.component";
 
 @Component({
   selector: 'app-realisations',
-  imports: [ RouterModule, CommonModule, CardComponent, MenuComponent],
+  imports: [  CommonModule, CardComponent, MenuComponent],
   templateUrl: './realizations.component.html',
   standalone: true,
   styleUrl: './realizations.component.scss'

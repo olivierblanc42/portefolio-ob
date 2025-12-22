@@ -10,7 +10,7 @@ import { MenuComponent } from "../../components/menu/menu.component";
 
 @Component({
   selector: 'app-experience',
-  imports: [FaIconComponent, RouterModule, CommonModule, CardComponent, MenuComponent],
+  imports: [ RouterModule, CommonModule, CardComponent, MenuComponent],
   templateUrl: './experience.component.html',
   styleUrl: './experience.component.scss'
 })

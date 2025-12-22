@@ -10,7 +10,7 @@ import { MenuComponent } from "../../components/menu/menu.component";
 
 @Component({
   selector: 'app-diplomes',
-  imports: [FaIconComponent, RouterModule, CommonModule, CardComponent, MenuComponent],
+  imports: [ RouterModule, CommonModule, CardComponent, MenuComponent],
   templateUrl: './diplomes.component.html',
   standalone: true,
   styleUrl: './diplomes.component.scss'
