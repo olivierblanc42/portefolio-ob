@@ -16,14 +16,17 @@
                     </div>
                     <div>
                         @if(realization.langage.length === 1){
-                        <p> <span>Langage</span> :@for (language of realization.langage; track $index) {
+                        <p> <span>Technologie</span> :@for (language of realization.langage; track $index) {
                             {{language}}
                             } </p>
                         }@else {
-                        <p> <span>Langages</span> :@for (language of realization.langage; track $index) {
+                        <p> <span>Technologies</span> :@for (language of realization.langage; track $index) {
                             {{language}},
                             } </p>
                         }
+                    </div>
+                    <div>
+                        <p><span>Date</span> {{realization.dateProject |date:'yyyy'}}</p>
                     </div>
                     <div>
                         <p> <span>Statut</span>  : {{realization.status}}</p>
