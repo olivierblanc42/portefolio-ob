@@ -7,6 +7,7 @@ export type Realization = {
     langage:string[];
     status: string;
     iconProjet:string;
+    dateProject:Date;
 }
 
 
